@@ -16,8 +16,6 @@ echo $paints = ALL - MARKERS - PENCILS;
 
 echo "<hr>";
 
-
-
 // task 03
 $age = 99;
 $arYoungAge = range(1, 17);
