@@ -12,19 +12,17 @@ echo "<hr>";
 const ALL = 80;
 const MARKERS = 23;
 const PENCILS = 40;
-echo $paints = ALL - MARKERS - PENCILS;
+echo ALL - MARKERS - PENCILS;
 
 echo "<hr>";
 
 // task 03
 $age = 99;
-$arYoungAge = range(1, 17);
-$arWorkAge = range(18, 65);
-if (in_array($age, $arWorkAge)) {
+if ($age >= 18 and $age <=65) {
     echo "Вам еще работать и работать";
 } elseif ($age > 65) {
     echo "Вам пора на пенсию";
-} elseif (in_array($age, $arYoungAge)) {
+} elseif ($age >= 1 and $age <=17) {
     echo "Вам еще рано работать";
 } elseif ($age < 1) {
     echo "Неизвестный возраст";
@@ -43,7 +41,6 @@ switch ($day) {
         break;
     default:
         echo "Неизвестный день";
-        break;
 }
 
 echo "<hr>";
@@ -61,7 +58,7 @@ foreach ($arCars as $key => $arValue) {
 echo "<hr>";
 
 // task 06
-echo "<table border=.gitignore cellpadding=5>";
+echo "<table border=1 cellpadding=5>";
 for ($i = 1; $i <= 10; $i++) {
     echo "<tr>";
     for ($j = 1; $j <= 10; $j++) {
