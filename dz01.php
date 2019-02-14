@@ -46,9 +46,9 @@ switch ($day) {
 echo "<hr>";
 
 // task 05
-$bmw = array("model" => "X5", "speed" => 120, "doors" => 5, "year" => 2015);
-$toyota = array("model" => "corolla", "speed" => 150, "doors" => 5, "year" => 2018);
-$opel = array("model" => "astra", "speed" => 100, "doors" => 5, "year" => 2011);
+$bmw = ["model" => "X5", "speed" => 120, "doors" => 5, "year" => 2015];
+$toyota = ["model" => "corolla", "speed" => 150, "doors" => 5, "year" => 2018];
+$opel = ["model" => "astra", "speed" => 100, "doors" => 5, "year" => 2011];
 $arCars = ["BMW" => $bmw, "TOYOTA" => $toyota, "OPEL" => $opel];
 foreach ($arCars as $key => $arValue) {
     echo "CAR " . $key . "<br>";
