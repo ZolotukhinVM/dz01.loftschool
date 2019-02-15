@@ -33,10 +33,10 @@ echo "<hr>";
 // task 04
 $day = 7;
 switch ($day) {
-    case ($day > 1 and $day <= 5):
+    case ($day > 1 && $day <= 5):
         echo "Это рабочий день";
         break;
-    case ($day == 6 or $day == 7):
+    case ($day == 6 || $day == 7):
         echo "Это выходной день";
         break;
     default:
@@ -58,7 +58,7 @@ foreach ($arCars as $key => $arValue) {
 echo "<hr>";
 
 // task 06
-echo "<table border=1 cellpadding=5>";
+echo "<table border='1' cellpadding='5'>";
 for ($i = 1; $i <= 10; $i++) {
     echo "<tr>";
     for ($j = 1; $j <= 10; $j++) {
