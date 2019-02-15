@@ -52,7 +52,7 @@ $opel = ["model" => "astra", "speed" => 100, "doors" => 5, "year" => 2011];
 $arCars = ["BMW" => $bmw, "TOYOTA" => $toyota, "OPEL" => $opel];
 foreach ($arCars as $key => $arValue) {
     echo "CAR " . $key . "<br>";
-    echo $arValue["model"] . " " . $arValue["speed"] . " " . $arValue["doors"] . " " . $arValue["year"] . "<br>";
+    echo implode(" ", $arValue) . "<br>";
 }
 
 echo "<hr>";
